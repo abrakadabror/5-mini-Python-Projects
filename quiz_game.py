@@ -32,4 +32,5 @@ if answer == 'im not sleeping':
 else:
     print('thats wrong answer')
 
-print('You got' + str(score) + 'question correct' )
+print('You got ' + str(score) + 'question correct!' )
+print('You got: ' + str((score / 4)* 100)+ "%")
