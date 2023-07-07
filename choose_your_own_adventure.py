@@ -10,13 +10,17 @@ if answer == 'left': #jesli odpowiedz to w lewo
         print('You walked for many miles, ran out of water and you lose a game')
     else:
         print('Not a valid option.You lose.')
-elif answer == 'right':
+elif answer == 'right': #jesli odpowiedz to w prawo 
     answer = input("You come to a bridge. It's looks woobly, do you want to cross it?")
-    if answer == 'back':
+    if answer == 'back': #jesli odpowiedz to back
          print('You were kicked in the ass by a human-tourch')
-    elif answer =='cross':
-        print('You walked for many miles, ran out of water and you lost the game')
-    else: 
-        print('Not a valid option. You lose.')
+    elif answer =='cross': #jesli odpowiedz to przez
+        answer = input('You cross the bridge and meet a strange. Do you talk to him yes/no?')
+        if answer == 'yes': #jestli odpowiedz to tak to wydrukuje:
+            print('You talk to the stranger a they give you a gold. You win!')
+        elif answer == 'no': #jesli odpowiedz to nie to wydrukuje:
+            print('You ignore the stranger and you are offended and you lose! ')
+        else: #jesli  zanda z powyzszych odp:
+            print('Not a valid option. You lose.')
 else:
     print('Not a valid option.You lose.')
