@@ -22,5 +22,7 @@ elif answer == 'right': #jesli odpowiedz to w prawo
             print('You ignore the stranger and you are offended and you lose! ')
         else: #jesli  zanda z powyzszych odp:
             print('Not a valid option. You lose.')
+    else:
+        print('Not a valid option.You lose.')
 else:
     print('Not a valid option.You lose.')
