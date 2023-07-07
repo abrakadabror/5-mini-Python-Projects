@@ -1,4 +1,4 @@
-import random #domyslnie w pythonie 
+import random # biblioteka domyslnie w pythonie 
 
 #Sposob numer #1 do generowania liczb
 # r = random.randrange(-5, 11) #(-1, 10) jesli chcesz zaczac generowac  od -1 i zakonczyc na 9
@@ -7,8 +7,7 @@ import random #domyslnie w pythonie
 #Sposob numer #2 do generowania liczb
 # r = random.randint(-5, 11) #moze wygenerowac losowo rowniez 11 
 # print(r)
-
-
+######### program |ZGADYWACZ|
 
 top_of_range =  input('Type a number: ') #uzytkownik podaje numer
 guesses = 0
