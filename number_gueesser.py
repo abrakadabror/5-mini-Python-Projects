@@ -34,13 +34,18 @@ while True:
     if user_guess == random_number:
         print('You got it!')
         break #przerywamy break petle while
-    else:
-        #print('You got it wrong') #zeby przerwac petle nieskonczona nalezy wcisnac crtl + c
-        if user_guess > random_number:
-            print("You were above the number!")
-        else:
-            print('You were below the number!')
+    # else:
+    #     #print('You got it wrong') #zeby przerwac petle nieskonczona nalezy wcisnac crtl + c
+    #     if user_guess > random_number: #dodanie linijki 39 informujacej uzytkownika, ze jego liczba byla powyzej lub ponizej wylosowanej
+    #         print("You were above the number!")
+    #     else:
+    #         print('You were below the number!')
 
+    elif user_guess > random_number:
+        print('You were above the number!')
+    else:
+        print('You were below the number!')
+    
 
 
 print(f'You got it in:  {guesses}  Congratulations!') #sprawdzamy z f-stringiem w w ilu probach udalo sie zgadnac odpowiedz uztykownikowi
