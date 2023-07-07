@@ -22,3 +22,11 @@ else:
     quit()
 random_number = random.randint(0, top_of_range) #uzywamy top_of_range do generowania numerow
 print(random_number) #drukujemy random_number z lini wyzej
+
+while True:
+    user_guess = input('Make a guess: ')
+    if user_guess.isdigit():
+        user_guess = int(user_guess)
+    else:
+        print('Please type a number next time.') #jesli nie jest wyswietl ten komunikat
+        continue
