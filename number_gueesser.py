@@ -19,6 +19,6 @@ if top_of_range.isdigit():
         quit()
 else:
     print('Please type a number next time.') #jesli nie jest wyswietl ten komunikat
-quit()
-random_number = random.randint(top_of_range) #uzywamy top_of_range do generowania numerow
+    quit()
+random_number = random.randint(0, top_of_range) #uzywamy top_of_range do generowania numerow
 print(random_number) #drukujemy random_number z lini wyzej
