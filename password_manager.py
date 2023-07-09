@@ -1,12 +1,26 @@
 #manadzer hasel
-pwd = input('what is the master passowrd?')
+import cryptography
+from cryptography.fernet import Fernet #importujemy bibliotek cryptography a z niej pobieramy Fernet
 
+master_pwd = input('what is the master passowrd?')
+
+def write_key():
+    key = Fernet.generate_key() #oznaczamy czym jest klucz 
+    with open('key.key', 'wb') as key_file: # otwiera pik, tworzy plik on nazwie key.key w trynie wb i oznacza jako key_file
+        key_file.write(key)
 
 def view():
-    pass
+     with open('password.txt', 'r') as f: #  r - tylko odczyt,
+        for line in f.readlines():
+            data = line.rstrip()
+            user, passw = data.split('|') #dzielimy split zawsze gdy znajdzie znak '|'
+            print('User:', user, ', Password', passw)
 def add():
-    pass
+    name = input('Account name: ') #user podaje nazwe konta
+    pwd = input('Password: ') #user podaje haslo
 
+    with open('password.txt', 'a') as f: # w oznacza, napisywanie pliku, r - tylko odczyt, a - dodaje cos na koncu pliku i tworzy nowy plik jesli nie istneije.
+        f.write(name + '|' + pwd + '\n') #pobieramy 'name' przedzielamy '|' oraz dodajemy 'password'
 
 while True: # gdy prawdziwe to
     mode = input('Wodul you like to add a new passowrd or view a existing ones(view, add, press q to quit)?')
