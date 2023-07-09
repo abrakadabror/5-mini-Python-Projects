@@ -1,9 +1,7 @@
-#manadzer hasel
 import cryptography
-from cryptography.fernet import Fernet #importujemy bibliotek cryptography a z niej pobieramy Fernet
+from cryptography.fernet import Fernet #nie pobiera cryptography....
 
 master_pwd = input('what is the master passowrd?')
-
 def write_key():
     key = Fernet.generate_key() #oznaczamy czym jest klucz 
     with open('key.key', 'wb') as key_file: # otwiera pik, tworzy plik on nazwie key.key w trynie wb i oznacza jako key_file
