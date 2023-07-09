@@ -10,9 +10,9 @@ def add():
 
 while True: # gdy prawdziwe to
     mode = input('Wodul you like to add a new passowrd or view a existing ones(view, add, press q to quit)?')
-    if mode = 'q': #przerywamy dzialanie programu
+    if mode == 'q': #przerywamy dzialanie programu
         break
-    if mode = 'view': # jesli uzytkownik poda view
+    if mode == 'view': # jesli uzytkownik poda view
         view() #wywolujemy funckje view()
     elif mode == 'add': #jesli uzytkownik poda add
         add() #wywolujemy funkcje add()
